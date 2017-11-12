@@ -8,15 +8,12 @@
 		 * {
 		 	box-sizing: border-box;
 		 }
-
 		
 			
 		 #segundoContenedor {
 			display: flex;
 
 		 }
-
-
 
 
 		 /* ASIDE E INTERIOR */
@@ -34,15 +31,18 @@
 			align-items: center;
 		}
 
+
 		div.logo {
 			height: 20%;
 			justify-content: center;
 		}
 
+
 		div.logo a img {
 			width: 100px;
 			border-radius: 5px;
 		}
+
 
 		ul.opciones {
 			list-style: none;
@@ -63,16 +63,17 @@
 			transition: 400ms ease;
 		}
 
+
 		ul.opciones > li a {
 			text-decoration: none;
 			color: black;
 		}
 
+
 		ul.opciones > li:hover  {
 			border-bottom: 5px solid #E51919;
 			cursor: pointer;
 		}
-
 		
 
 		ul.opciones > li > ul{
@@ -92,11 +93,13 @@
 			transition: 500ms ease;
 		}
 
+
 		ul.opciones > li:hover > ul {
 			opacity: 1;
 			height: auto;
 			z-index: 100;
 		}
+
 
 		ul.opciones > li > ul > a {
 			width: 100%;
@@ -105,22 +108,21 @@
 			transition: 300ms ease;
 		}
 
+
 		ul.opciones > li > ul > a:hover {
 			background: #6B6B6B;
 		}
-
-
-
-
-		
 
 		
 		ul.opciones > #buscar {
 			cursor: text;
 		}
 
-		
 
+		ul.opciones2 li a {
+			text-decoration: none;
+			color: white;
+		}
 
 
 		div.redes {
@@ -129,6 +131,8 @@
 			justify-content:flex-start;
 			flex-direction: column;
 		}
+
+
 		div.redes > p {
 			text-align: center;
 			color: black;
@@ -141,19 +145,22 @@
 			transition: 400ms ease;
 		}
 
+
 		div.redes > p:hover {
 			border-bottom: 5px solid #E51919;
 		}
+
 
 		div.redes nav {
 			display: flex;
 			flex-direction: row;
 			align-content: space-around;
 		}
+
+
 		div.redes nav p {
 			margin: 5px;
 		}
-
 		
 
 		div.redes nav a img {
@@ -165,29 +172,31 @@
 			transition: 300ms ease;
 		}
 
+
 		div.redes nav a:hover img {
 			transform: scale(1.2);
 		}
 
 
-
 		/* SECTION e INTERIOR*/
-
-		
 
 		section article {
 			margin-bottom: 80px;
 		}
+
+
 		article div p{
 			text-align: left;
 		}
+
+
 		article div h6 {
 			color: aquamarine;
 		}
 
 
-
 		/*IDIOMAS*/
+
 		.idiomas{
 			width: 700px;
 			display: flex;
@@ -195,11 +204,14 @@
 			height: 50px;
 			color: white;
 		}
+
+
 		.idiomas img{
 			width: 30px;
 			height: 15px;
 			border-radius: 3px;
 		}
+
 
 		/*CUADRO DE REGISTRO */
 
@@ -209,17 +221,17 @@
 			height: 50px;
 			border-radius:3px;
 		}
+
 		.loggin img {
 			width: 100%;
 			height: 100%;
 			transition: 300ms ease;
 		}
 
+
 		.loggin img:hover {
 			transform: scale(0.9);
 		}
-
-
 
 
 		/*SLIDER*/
@@ -228,10 +240,12 @@
 			height: 300px;
 		}
 		
+
 		.slidertrue {
 			position: relative;
   			width: 700px;
 		}
+
 
 		.slidertrue div  {
 			display: flex;
@@ -246,6 +260,7 @@
 			border: 1px solid #1FC22E;
 		}
 
+
 		.slidertrue div a {
 			position: absolute;
 			z-index: 1;
@@ -256,20 +271,18 @@
 			top: 250px;
 		}
 
+
 		.sinEfecto {
 			opacity: 0;
 			transition: 500ms ease;
 		}
+
 
 		.efecto {
 			opacity: 1;
 			transition: 1000ms ease;
 		}
 		
-		
-
-
-
 
 		/*PARTE CENTRAL MEDIA*/
 
@@ -277,9 +290,11 @@
 			color: white;
 		}
 
+
 		.interior .baraja {
 			display: flex;
 		}
+
 
 		.interior .baraja div {
 			position: relative;
@@ -289,10 +304,12 @@
 			justify-content: center;
 		}
 
+
 		.interior .baraja div img {
 			width: 100%;
 			height: 100%;
 		}
+
 
 		.interior .baraja div p a {
 			padding: 5px 10px;
@@ -301,15 +318,19 @@
 			text-decoration: none;
 		}
 
+
 		.interior .baraja div{
 			outline: 1px solid #1FC22E;
 			justify-content: center;
 			overflow: hidden;
 		}
 
+
 		.interior .baraja div h6{
 			position: absolute;
 		}
+
+
 		.interior .baraja div p {
 			display: flex;
 			width: 100%;
@@ -323,26 +344,16 @@
 			transition:all 200ms ease;
 		}
 
+
 		.interior .baraja div:hover p {
 			height: 50px;
 			opacity: 0.8;
 			display: block;
 		}
-		
-		
-
-		
-
-		
-
-
 
 
 		/* FOOTER */
 
-
-
-		
 		footer{
 			margin: 10px 0;
 			display: flex;
@@ -351,11 +362,13 @@
 			justify-content: flex-start;
 		}
 
+
 		footer div {
 			margin: 20px 0;
 			display: flex;
 			justify-content: center;
 		}
+
 
 		footer #enlaces a {
 			margin: 0 20px;
@@ -363,16 +376,16 @@
 			text-decoration: none;
 		}
 
+
 		footer #enlaces a:hover {
 			color:#14D126;
 		}
+
 
 		footer #redes a {
 			margin:0 10px;
 		}
 
-
-		
 
 		footer #redes a img {
 			width: 40px;
@@ -382,15 +395,16 @@
 			transition: 300ms ease;
 		}
 
+
 		footer #redes a img:hover {
 			transform: scale(1.2);
 		} 
 
 
-
 		footer #derechos {
 			color: white;
 		}
+
 		
 		/*BOTON SUBIR*/
 
@@ -404,5 +418,3 @@
 		  color:white;
 		  cursor:pointer;
 		}
-
-
