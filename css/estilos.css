@@ -1,0 +1,408 @@
+ 
+		/*  CONTENEDORES  */
+		 #contenedor {
+		 	background-color: #4A5459;
+		 }
+
+
+		 * {
+		 	box-sizing: border-box;
+		 }
+
+		
+			
+		 #segundoContenedor {
+			display: flex;
+
+		 }
+
+
+
+
+		 /* ASIDE E INTERIOR */
+
+		 aside {
+		 	position: fixed;
+			height: 100%;
+		 }
+
+ 		
+		aside > * {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		div.logo {
+			height: 20%;
+			justify-content: center;
+		}
+
+		div.logo a img {
+			width: 100px;
+			border-radius: 5px;
+		}
+
+		ul.opciones {
+			list-style: none;
+		}
+		
+
+		ul.opciones > li  {
+			text-decoration: none;
+			color: black;
+			margin: 15px 0;
+			position: relative;
+			text-align: center;
+			width: 200px;
+			border-radius: 1px;
+			background: white;
+			padding: 10px 0px;
+			border-bottom: 5px solid #079ED6;
+			transition: 400ms ease;
+		}
+
+		ul.opciones > li a {
+			text-decoration: none;
+			color: black;
+		}
+
+		ul.opciones > li:hover  {
+			border-bottom: 5px solid #E51919;
+			cursor: pointer;
+		}
+
+		
+
+		ul.opciones > li > ul{
+			list-style: none;
+			position: absolute;
+			border:1px solid;
+			top: 45px;
+			width: 200px;
+
+			border:1px solid #C83434;
+			overflow: hidden;
+			background:#252525;
+			display: flex;
+			flex-direction: column;
+			height: 0;
+			opacity: 0;
+			transition: 500ms ease;
+		}
+
+		ul.opciones > li:hover > ul {
+			opacity: 1;
+			height: auto;
+			z-index: 100;
+		}
+
+		ul.opciones > li > ul > a {
+			width: 100%;
+			padding: 5px 0;
+			color: white;
+			transition: 300ms ease;
+		}
+
+		ul.opciones > li > ul > a:hover {
+			background: #6B6B6B;
+		}
+
+
+
+
+		
+
+		
+		ul.opciones > #buscar {
+			cursor: text;
+		}
+
+		
+
+
+
+		div.redes {
+			margin: 60px 0;
+			height: 40%;
+			justify-content:flex-start;
+			flex-direction: column;
+		}
+		div.redes > p {
+			text-align: center;
+			color: black;
+			margin: 20px 0;
+			width: 200px;
+			border-radius: 1px;
+			background: white;
+			padding: 10px 0px;
+			border-bottom: 5px solid #2DCA1D;
+			transition: 400ms ease;
+		}
+
+		div.redes > p:hover {
+			border-bottom: 5px solid #E51919;
+		}
+
+		div.redes nav {
+			display: flex;
+			flex-direction: row;
+			align-content: space-around;
+		}
+		div.redes nav p {
+			margin: 5px;
+		}
+
+		
+
+		div.redes nav a img {
+			width: 40px;
+			background: white;
+			border-radius: 20px;
+			border:1px solid;
+			margin:0 5px;
+			transition: 300ms ease;
+		}
+
+		div.redes nav a:hover img {
+			transform: scale(1.2);
+		}
+
+
+
+		/* SECTION e INTERIOR*/
+
+		
+
+		section article {
+			margin-bottom: 80px;
+		}
+		article div p{
+			text-align: left;
+		}
+		article div h6 {
+			color: aquamarine;
+		}
+
+
+
+		/*IDIOMAS*/
+		.idiomas{
+			width: 700px;
+			display: flex;
+			justify-content: space-between;
+			height: 50px;
+			color: white;
+		}
+		.idiomas img{
+			width: 30px;
+			height: 15px;
+			border-radius: 3px;
+		}
+
+		/*CUADRO DE REGISTRO */
+
+		.idiomas .loggin{
+			text-align: center;
+			width: 50px;
+			height: 50px;
+			border-radius:3px;
+		}
+		.loggin img {
+			width: 100%;
+			height: 100%;
+			transition: 300ms ease;
+		}
+
+		.loggin img:hover {
+			transform: scale(0.9);
+		}
+
+
+
+
+		/*SLIDER*/
+
+		.slider {
+			height: 300px;
+		}
+		
+		.slidertrue {
+			position: relative;
+  			width: 700px;
+		}
+
+		.slidertrue div  {
+			display: flex;
+			justify-content: center;
+		}
+
+
+		.slidertrue div img {
+			position: absolute;
+			width: 100%;
+			height: 300px;
+			border: 1px solid #1FC22E;
+		}
+
+		.slidertrue div a {
+			position: absolute;
+			z-index: 1;
+			text-decoration: none;
+			color: white;
+			padding: 10px 30px;
+			background: red;
+			top: 250px;
+		}
+
+		.sinEfecto {
+			opacity: 0;
+			transition: 500ms ease;
+		}
+
+		.efecto {
+			opacity: 1;
+			transition: 1000ms ease;
+		}
+		
+		
+
+
+
+
+		/*PARTE CENTRAL MEDIA*/
+
+		.interior {
+			color: white;
+		}
+
+		.interior .baraja {
+			display: flex;
+		}
+
+		.interior .baraja div {
+			position: relative;
+			width: 33%;
+			margin: 1%;
+			display: flex;
+			justify-content: center;
+		}
+
+		.interior .baraja div img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.interior .baraja div p a {
+			padding: 5px 10px;
+			background: red;
+			color: white;
+			text-decoration: none;
+		}
+
+		.interior .baraja div{
+			outline: 1px solid #1FC22E;
+			justify-content: center;
+			overflow: hidden;
+		}
+
+		.interior .baraja div h6{
+			position: absolute;
+		}
+		.interior .baraja div p {
+			display: flex;
+			width: 100%;
+			position: absolute;
+			font-size: 10px;
+			background: black;
+			opacity: 0;
+			bottom: -20px;
+			height: 0;
+			text-align: center;
+			transition:all 200ms ease;
+		}
+
+		.interior .baraja div:hover p {
+			height: 50px;
+			opacity: 0.8;
+			display: block;
+		}
+		
+		
+
+		
+
+		
+
+
+
+
+		/* FOOTER */
+
+
+
+		
+		footer{
+			margin: 10px 0;
+			display: flex;
+			background: #2A628F;
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		footer div {
+			margin: 20px 0;
+			display: flex;
+			justify-content: center;
+		}
+
+		footer #enlaces a {
+			margin: 0 20px;
+			color: white;
+			text-decoration: none;
+		}
+
+		footer #enlaces a:hover {
+			color:#14D126;
+		}
+
+		footer #redes a {
+			margin:0 10px;
+		}
+
+
+		
+
+		footer #redes a img {
+			width: 40px;
+			background: white;
+			border-radius: 50%;
+			border:1px solid;
+			transition: 300ms ease;
+		}
+
+		footer #redes a img:hover {
+			transform: scale(1.2);
+		} 
+
+
+
+		footer #derechos {
+			color: white;
+		}
+		
+		/*BOTON SUBIR*/
+
+		p.subir{
+			display: none;
+		  position:fixed;
+		  right: 250px;
+		  bottom: 50px;
+		  background-color: #FF8400;
+		  padding: 10px;
+		  color:white;
+		  cursor:pointer;
+		}
+
+

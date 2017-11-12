@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba</title>
+	<meta charset="utf-8">
+	 <meta name="description" content="2 DAW SMARTPHONE SHOP PRO">
+  	 <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+     <meta name="author" content="Elias Enrique y Santiago Rengifo">
+	<link rel="stylesheet" href="css/reset.css">
+
+	<link rel="stylesheet" type="text/css" href="css/960_12_col.css">
+	
+	<link rel="stylesheet" href="css/text.css">
+
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		
+			
+		function scrollwin(){
+		window.scroll({
+		  top: 0, 
+		  left: 0, 
+		  behavior: 'smooth' 
+		});
+		}
+
+		
+		var indiceImagen = 0;
+
+
+
+		function slider() {
+		    var imagenes = document.getElementsByClassName("imagen");
+		    for (var i = 0; i < imagenes.length; i++) {
+		        imagenes[i].parentNode.className='sinEfecto';
+		    }
+		    indiceImagen++;
+		    if(indiceImagen> imagenes.length){indiceImagen=1;}
+		    imagenes[indiceImagen-1].parentNode.className='efecto';
+		    setTimeout(slider,2500);
+
+		}
+
+			function lele(){
+				if(document.documentElement.scrollTop == 0){
+					document.getElementsByClassName('subir')[0].style.display="none";
+				}else {
+					document.getElementsByClassName('subir')[0].style.display="block";
+				}
+			}
+		
+			function buscando(e) {
+    		if (e.keyCode == 13) {
+        		location.href ="./construccion.html";
+   			}
+		}
+			
+		
+
+	</script>
+	<style type="text/css">
+		h2{
+			color: white;
+		}
+		section{
+			height: 900px;
+		}
+		footer{
+			margin: 49% 0 0 0;
+		}
+	</style>
+</head>
+<body onload="slider()"onscroll="lele()">
+	
+	
+	<div class="container_12" id="contenedor" >
+
+		
+	<div class="grid_12 alpha" id="segundoContenedor"> 
+
+		<aside class="grid_3 alpha">
+			
+			<div class="logo"> 	
+				<a href="index.html"><img src="imagenes/logo.png" alt=""></a>
+			</div>
+
+			<ul class="opciones" >
+				
+				<li><a href="#" class="toque">COMUNIDAD</a>
+					
+					<ul>
+						<a href="">Servicio Tecnico</a>
+						<a href="">Call center</a>
+						<a href="">Foro</a>
+					</ul>
+					
+				</li>
+				<li><a href="productos/index.html" class="toque">PRODUCTOS</a>
+					<ul>
+						<a href="./productos/index.html#top">Gama alta</a>
+						<a href="./productos/index.html#media">Gama media</a>
+						<a href="./productos/index.html#basics">Móviles fácil uso</a>
+					</ul>
+				</li>
+				<li>
+					<span id="buscar">
+					<input placeholder="BUSCAR" style="border:none; text-align: center;" onkeypress="buscando(event)">
+				</span>
+				</li>
+				<li><a href="#" class="toque">VISITANOS</a>
+					
+					<ul>
+						<a href="">Valencia</a>
+						<a href="">Madrid</a>
+					</ul>
+
+				</li>
+
+			</ul>
+			<div class="redes">
+				<p>REDES SOCIALES</p>
+				<nav>
+					
+					<a href="#"><img src="imagenes/facebook.svg" alt=""></a>
+					<a href="#"><img src="imagenes/youtube.svg" alt=""></a>
+					<a href="#"><img src="imagenes/twitter.svg" alt=""></a>
+					<a href="#"><img src="imagenes/instagram.svg" alt=""></a>
+
+				</nav>
+			</div>
+
+		</aside>
+
+		<div class="prefix_3"></div>
+
+		<section class="grid_9 omega" >
+			
+			<article class="slider alpha">
+					<div class="idiomas" id="top">
+						<div>
+							<a href="index.html"><img src="imagenes/idiomas/espanol.jpg" alt=""/></a>
+							<a href="#"><img src="imagenes/idiomas/ingles.jpg" alt=""/></a>
+						</div>
+						<div class='loggin'><img src="imagenes/login.svg" alt=""></div>
+					</div>
+					<h2>PAGINA EN CONSTRUCCION, LAMENTAMOS LAS MOLESTIAS</h2>
+					
+				</article>
+
+
+				<footer class="grid_9 alpha">
+						<div id="enlaces" >
+							<a href="">Contacto</a>
+							<a href="">Privacidad</a>
+							<a href="">Aviso Legal</a>
+							<a href="">Condiciones de uso y venta</a>
+							<a href="">Copyrigth</a>	
+						</div>
+						
+						<div id="redes">
+							
+							<a href=""><img src="imagenes/facebook.svg" alt=""></a>
+							<a href=""><img src="imagenes/youtube.svg" alt=""></a>
+							<a href=""><img src="imagenes/twitter.svg" alt=""></a>
+							<a href=""><img src="imagenes/instagram.svg" alt=""></a>
+
+						</div>
+						<div id="derechos">Todos los derechos reservados a GamesGoal ®</div>
+					
+					
+				</footer>
+				
+				<p class="subir" onclick="scrollwin()">Subir</p>
+
+		</section>
+
+	</div>
+
+
+	</div>
+
+
+
+
+</body>
+
+
+
+</html>
