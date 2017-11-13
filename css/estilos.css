@@ -64,7 +64,7 @@
 		}
 
 
-		ul.opciones > li a {
+		ul.opciones > li > a {
 			text-decoration: none;
 			color: black;
 		}
@@ -82,7 +82,7 @@
 			border:1px solid;
 			top: 45px;
 			width: 200px;
-
+			
 			border:1px solid #C83434;
 			overflow: hidden;
 			background:#252525;
@@ -108,9 +108,18 @@
 			transition: 300ms ease;
 		}
 
+		ul.opciones > li > ul.opciones2 > li {
+			position: relative;
+			left: -30px;
+			width: 200px;
+			height: 30px;
+		}
 
-		ul.opciones > li > ul > a:hover {
-			background: #6B6B6B;
+		
+
+
+		ul.opciones2 > li:hover {
+			background: #6C6868;
 		}
 
 		
@@ -119,9 +128,10 @@
 		}
 
 
-		ul.opciones2 li a {
+		ul.opciones2 > li > a {
 			text-decoration: none;
 			color: white;
+			
 		}
 
 

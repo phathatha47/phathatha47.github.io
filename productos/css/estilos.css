@@ -8,7 +8,7 @@
 		 * {
 		 	box-sizing: border-box;
 		 }
-
+		
 			
 		 #segundoContenedor {
 			display: flex;
@@ -31,15 +31,18 @@
 			align-items: center;
 		}
 
+
 		div.logo {
 			height: 20%;
 			justify-content: center;
 		}
 
+
 		div.logo a img {
 			width: 100px;
 			border-radius: 5px;
 		}
+
 
 		ul.opciones {
 			list-style: none;
@@ -60,7 +63,8 @@
 			transition: 400ms ease;
 		}
 
-		ul.opciones > li a {
+
+		ul.opciones > li > a {
 			text-decoration: none;
 			color: black;
 		}
@@ -70,7 +74,6 @@
 			border-bottom: 5px solid #E51919;
 			cursor: pointer;
 		}
-
 		
 
 		ul.opciones > li > ul{
@@ -79,7 +82,7 @@
 			border:1px solid;
 			top: 45px;
 			width: 200px;
-
+			
 			border:1px solid #C83434;
 			overflow: hidden;
 			background:#252525;
@@ -90,11 +93,13 @@
 			transition: 500ms ease;
 		}
 
+
 		ul.opciones > li:hover > ul {
 			opacity: 1;
 			height: auto;
 			z-index: 100;
 		}
+
 
 		ul.opciones > li > ul > a {
 			width: 100%;
@@ -103,19 +108,30 @@
 			transition: 300ms ease;
 		}
 
-		ul.opciones > li > ul > a:hover {
-			background: #6B6B6B;
+		ul.opciones > li > ul.opciones2 > li {
+			position: relative;
+			left: -30px;
+			width: 200px;
+			height: 30px;
 		}
 
 		
-		ul.opciones2 li a {
-			text-decoration: none;
-			color: white;
+
+
+		ul.opciones2 > li:hover {
+			background: #6C6868;
 		}
 
 		
 		ul.opciones > #buscar {
 			cursor: text;
+		}
+
+
+		ul.opciones2 > li > a {
+			text-decoration: none;
+			color: white;
+			
 		}
 
 
@@ -125,6 +141,8 @@
 			justify-content:flex-start;
 			flex-direction: column;
 		}
+
+
 		div.redes > p {
 			text-align: center;
 			color: black;
@@ -136,6 +154,7 @@
 			border-bottom: 5px solid #2DCA1D;
 			transition: 400ms ease;
 		}
+
 
 		div.redes > p:hover {
 			border-bottom: 5px solid #E51919;
@@ -152,7 +171,7 @@
 		div.redes nav p {
 			margin: 5px;
 		}
-
+		
 
 		div.redes nav a img {
 			width: 40px;
@@ -169,7 +188,6 @@
 		}
 
 
-
 		/* SECTION e INTERIOR*/
 
 		section article {
@@ -177,7 +195,18 @@
 		}
 
 
+		article div p{
+			text-align: left;
+		}
+
+
+		article div h6 {
+			color: aquamarine;
+		}
+
+
 		/*IDIOMAS*/
+
 		.idiomas{
 			width: 700px;
 			display: flex;
@@ -203,7 +232,6 @@
 			border-radius:3px;
 		}
 
-
 		.loggin img {
 			width: 100%;
 			height: 100%;
@@ -221,8 +249,8 @@
 		.slider {
 			height: 300px;
 		}
-
 		
+
 		.slidertrue {
 			position: relative;
   			width: 700px;
@@ -233,7 +261,6 @@
 			display: flex;
 			justify-content: center;
 		}
-
 
 
 		.slidertrue div img {
